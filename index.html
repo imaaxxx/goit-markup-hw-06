@@ -47,8 +47,8 @@
               <use href="./images/icons.svg#icon-maile-hover-1"></use>
             </svg>
             info@devstudio.com
-        </li>
       </a>
+    </li>
 
 
           <li class="header-item"> 
@@ -176,7 +176,7 @@
         </a>
       </li>
     </ul>
-  </li>
+
 
   <li class="team-card">
     <img src="./images/team-3.jpg" alt="Репина" width="270"/>
@@ -419,6 +419,23 @@
     </ul>
   </div>
 
+
+  <div class="footer-subscribe">
+    <form class="subscribe-form">
+<div class="label-footer">
+<label for="footer-mail" class="subscribe-email"> Подпишитесь на рассылку </label>
+    <input type="email" name="user-mail" id="footer-mail" class="email-input" placeholder="E-mail" required>
+  </div>
+  
+  <button type="submit" class="btn-footer"> Подписаться 
+    <svg width="24" height="24" class="btn-subscribe">
+      <use href="./images/icons.svg#icon-icon-subscribe">
+      </use>
+    </svg>
+  </button> 
+    
+  </form>
+</div>
 </footer>
 
 <!--**************************MODAL WINDOW***************************  -->
@@ -431,6 +448,69 @@
       </use>
     </svg>
   </button>
+  <p class="modal-title"> Оставьте свои данные, мы вам перезвоним </p>
+  <form class="modal-form">
+
+
+    <div class="modal-sector">
+    <label class="modal-label" for="name-input"> Имя </label> 
+    <input type="text" name="user-name" id="name-input" class="modal-input" placeholder="Василь" required >
+    <span class="modal-icon">
+    <svg width="12" height="12" class="input-icon">
+      <use href="./images/icons.svg#icon-name-modal">
+      </use>
+    </svg>
+  </span>
+</div>
+
+
+<div class="modal-sector">
+    <label class="modal-label" for="tel-input"> Телефон  </label>
+    <input type="tel" name="user-tell" id="tel-input" class="modal-input" placeholder="+380-99-111-11-11" required>
+    <span class="modal-icon">
+      <svg  width="13" height="13">
+        <use href="./images/icons.svg#icon-tel-modal">
+        </use>
+      </svg>
+    </span>
+</div>
+
+<div class="modal-sector">
+    <label class="modal-label" for="mail-input"> Почта  </label>
+    <input type="email" name="user-mail" id="mail-input" class="modal-input" placeholder="Supervasya@gmail.com" required>
+    <span class="modal-icon">
+      <svg  width="15" height="12">
+        <use href="./images/icons.svg#icon-mail-modal">
+        </use>
+      </svg>
+    </span>
+
+</div>
+
+<div class="modal-sector">
+    <label class="modal-label" for="comment-input"> Комментарий  </label>
+    <textarea name="user-comment" id="comment-input" class="modal-textarea" placeholder="Введите текст"></textarea>
+</div>
+
+
+
+
+<div class="terms-sector">
+<input type="checkbox" name="terms" id="terms-checkbox" class="checkbox visually-hidden">
+<label for="terms-checkbox" class="checkbox-label"> Соглашаюсь с рассылкой и принимаю <a href="">  Условия договора </a>
+  <span class="checkbox-icon">
+    <svg  width="16" height="15" class="check-icon">
+      <use href="./images/icons.svg#icon-icon-check">
+      </use>
+    </svg>
+  </span>
+</label>
+</div>
+
+
+    <button type="submit" class="btn-hero modal-btn"> Отправить </button>
+  </form>
+
 </div>
 </div>
 
