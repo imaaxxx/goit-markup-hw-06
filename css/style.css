@@ -888,7 +888,9 @@ margin-right: 12px;
   transition: fill 250ms var(--cubic-animation);
 }
 
-
+.modal-sector:focus-within .modal-icon, .modal-sector:hover .modal-icon {
+  fill: var(--brand-blue-color);
+}
 
 
 .is-hidden {
