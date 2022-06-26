@@ -760,15 +760,19 @@ address {
 }
 
 
+.footer-subscribe {
+  margin-left: auto;
+}
+
+
+
 .subscribe-form {
   display: flex;
   align-items: flex-end;
 }
 
 .label-footer {
-  width: 358px;
-  margin-right: 12px;
-  margin-left: 95px;
+
 }
 
 .subscribe-email{
@@ -792,6 +796,8 @@ height: 50px;
 background: #2F303A;
 color: var(--brand-white-color);
 padding-left: 15px;
+width: 358px;
+margin-right: 12px;
 }
 
 
@@ -799,6 +805,7 @@ padding-left: 15px;
 .btn-footer {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin: 0 auto;
   font-weight: 700;
   border-radius: 4px;
@@ -819,7 +826,7 @@ padding-left: 15px;
 
 .btn-subscribe {
   fill: var(--brand-white-color);
-  padding-left: 10px;
+  
 }
 
 
@@ -850,7 +857,7 @@ padding-left: 15px;
   min-height: 581px;
   background-color: var(--brand-white-color);
   border-radius: 5px;
-  transition: transform 250ms linear;
+  transition: transform 250ms var(--cubic-animation);
   padding: 40px;
 }
 
@@ -883,6 +890,7 @@ padding-left: 15px;
 
 
 
+
 .is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -906,9 +914,9 @@ padding-left: 15px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   background-color: transparent;
-  margin-bottom: 10px;
+
   cursor: pointer;
-  transition: border 250ms var(--cubic-animation), transition: fill 250ms var(--cubic-animation);
+  transition: border 250ms var(--cubic-animation);
   padding-left: 30px;
 }
 
@@ -937,7 +945,31 @@ color: var(--brand-grey-color);
 .modal-btn {
   display: block;
   margin: 0 auto;
+  font-family: 'Roboto';
+  font-weight: 700;
+  border-radius: 4px;
+  border: none;
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  color: var(--brand-white-color);
+  background-color: var(--brand-blue-color);
+  transition: color 250ms var(--cubic-animation), background-color 250ms var(--cubic-animation);
 }
+
+
+.modal-btn:hover {
+  background-color: #188ce8;
+}
+.modal-btn:focus {
+  background-color: #188ce8;
+}
+
 
 
 .modal-label {
@@ -960,15 +992,18 @@ cursor: pointer;
 
 .modal-sector {
   position: relative;
+  margin-bottom: 10px;
+  transition: border 250ms var(--cubic-animation);
 }
 
 
 .modal-icon {
   position: absolute;
-top: 50%;
+top: 55%;
 left: 10px;
 transform: translateY(-50%);
 padding-top: 14px;
+transition: fill 250ms var(--cubic-animation);
 }
 
 
@@ -989,6 +1024,9 @@ transition: border 250ms var(--cubic-animation);
 .terms-sector {
   margin-top: 20px;
   margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 
   position: relative;
@@ -1000,7 +1038,7 @@ transition: border 250ms var(--cubic-animation);
   position: absolute;
   top: 50%;
 transform: translateY(-50%);
-
+left: 10px;
 }
 
 
@@ -1026,10 +1064,6 @@ margin-left: 20px;
 height: 15px;
 border-radius: 4px;
 border: 1px solid var(--brand-color);
-display: flex;
-align-items: center;
-justify-content: center;
-
 }
 
 
