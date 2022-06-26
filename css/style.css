@@ -1038,7 +1038,7 @@ transition: border 250ms var(--cubic-animation);
 
 .checkbox-icon {
   position: absolute;
-  top: 50%;
+  top: 45%;
 transform: translateY(-50%);
 left: 10px;
 }
